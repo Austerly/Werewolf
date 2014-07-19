@@ -1,0 +1,24 @@
+	<div class="centerFloats">
+		<h3>Total cards in deck:</h3>
+			<input class="inputForm" placeholder="Enter a number here" ng-model="totalCards">
+		<h3>Total TYPES of Special Cards:</h3>
+			<select class="inputChoice" ng-model="totalSpecials">
+				<option value="numberPlaceholder">placeholder</option>
+			</select>
+
+		<h3 ng-repeat-start="item in items">Special Card Type {{item}} Called: 
+		</h3>
+			<input class="inputForm" placeholder="Name of Special Card category 1" ng-model="specCard1.name">
+			</input>
+
+				<h3>Number of Special Card type #{{item}}?
+				</h3>
+				<select class="inputChoice" ng-model="specCard1.num" ng-repeat-end>
+					<option value="valuePlaceholder">placeholder
+					</option>
+				</select>
+
+		<div class="buttonHolder">
+			<h3 class="button"> click to continue </h3>
+		</div>
+	</div>

@@ -1,0 +1,39 @@
+body {
+background: url(/../images/backgroundPict.jpg);
+}
+#header {
+text-align: center;
+}
+
+#main {
+text-align: center;
+}
+
+.centerFloats {
+/*float:left;
+width:50%;
+*/}
+
+.inputForm {
+padding: 12px;
+font-size: 18px;
+width: 30%;
+text-align: center;
+}
+.button {
+display:inline-block;
+background: lightgray;
+padding:12px;
+}
+.button:hover {
+color:white;
+}
+.buttonHolder {
+text-align: center;
+padding:30px;
+}
+
+.container {
+background: rgba(211, 211, 211, .5);
+
+}
