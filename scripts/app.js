@@ -14,10 +14,10 @@
 		templateUrl: "views/form.html"
 		})
 
-		// .state('education', {
-		// 	url: '/education',
-		// 	templateUrl: 'templates/education.html'
-		// })
+		.state('cheatProtect', {
+			url: '/cheatProtect',
+			templateUrl: 'views/cheatProtect.html'
+		})
 
 		// .state('interests', {
 		// 	url: '/interests',

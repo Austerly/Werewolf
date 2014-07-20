@@ -1,8 +1,9 @@
 body {
-background: url(/../images/backgroundPict.jpg);
+background: url(/../images/crossword.png);
 }
 #header {
 text-align: center;
+padding-top:30px;
 }
 
 #main {
@@ -22,11 +23,14 @@ text-align: center;
 }
 .button {
 display:inline-block;
-background: lightgray;
+background: rgb(211, 211, 211);
 padding:12px;
+box-shadow: 0 0 1px 0 black;
 }
 .button:hover {
 color:white;
+box-shadow: none;
+cursor: pointer;
 }
 .buttonHolder {
 text-align: center;
@@ -34,6 +38,5 @@ padding:30px;
 }
 
 .container {
-background: rgba(211, 211, 211, .5);
-
+background: rgba(211, 211, 211, .3);
 }

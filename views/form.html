@@ -1,6 +1,8 @@
 	<div class="centerFloats">
 		<h3>Total cards in deck:</h3>
-			<input class="inputForm" placeholder="Enter a number here" ng-model="totalCards">
+			<input class="inputForm" placeholder="Enter a number here" ng-model="cardsInDeck">
+		</input>
+		{{cardsInDeck}}
 		<h3>Total TYPES of Special Cards:</h3>
 			<select class="inputChoice" ng-model="totalSpecials">
 				<option value="numberPlaceholder">placeholder</option>
@@ -19,6 +21,6 @@
 				</select>
 
 		<div class="buttonHolder">
-			<h3 class="button"> click to continue </h3>
+			<h3 class="button" ui-sref="cheatProtect" ng-click="totalCards = cardsInDeck"> click to continue </h3>
 		</div>
 	</div>
