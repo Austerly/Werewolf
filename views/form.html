@@ -1,26 +1,33 @@
-	<div class="centerFloats">
+<!-- Form Screen -->
+	<div class="centerFloats" ng-hide="totalCards===cardsInDeck">
 		<h3>Total cards in deck:</h3>
 			<input class="inputForm" placeholder="Enter a number here" ng-model="cardsInDeck">
 		</input>
-		{{cardsInDeck}}
-		<h3>Total TYPES of Special Cards:</h3>
-			<select class="inputChoice" ng-model="totalSpecials">
-				<option value="numberPlaceholder">placeholder</option>
+		
+		<h3>Play with special cards?</h3>
+			<select class="inputChoice" ng-model="totalSpecials" value="3">
+				<option value="3" selected="selected">Hunter & Oracle (default)</option>
+				<option>Just Werewolfs</option>
+				<option>With a Hunter</option>
+				<option>With an Oracle</option>
+				<option>Hunter & Oracle with another special</option>
 			</select>
 
-		<h3 ng-repeat-start="item in items">Special Card Type {{item}} Called: 
-		</h3>
-			<input class="inputForm" placeholder="Name of Special Card category 1" ng-model="specCard1.name">
-			</input>
-
-				<h3>Number of Special Card type #{{item}}?
-				</h3>
-				<select class="inputChoice" ng-model="specCard1.num" ng-repeat-end>
-					<option value="valuePlaceholder">placeholder
-					</option>
-				</select>
-
 		<div class="buttonHolder">
-			<h3 class="button" ui-sref="cheatProtect" ng-click="totalCards = cardsInDeck"> click to continue </h3>
+			<h3 class="button" ng-click="totalCards = cardsInDeck"> click to continue </h3>
 		</div>
 	</div>
+
+<!-- cheatProtect Screen -->
+	<div ng-show="totalCards===cardsInDeck">
+	<h2> Card {{currentCard}} of {{cardsInDeck}}
+	</h2>
+	<h2>
+		Click the button below when you are ready for the next card to be revealed
+	</h2>
+	<div class="buttonHolder">
+		<h3 class="button">
+			Click to continue
+		</h3>
+	</div>
+</div>
